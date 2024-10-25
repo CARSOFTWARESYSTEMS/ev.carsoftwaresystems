@@ -35,14 +35,12 @@ function createTodo() {
 
 <template>
   <main>
-
     <h1>ev.engineer</h1>
-
     <div>
       We provide Software Solutions for Electric Vehicle Service Engineers
       <br />
-      <a href="https://www.youtube.com/channel/UCUek35x0ayCqt-hLOfYTkIg">
-        Krutarth S Karkala
+      <a href="http://carsoftwaresystems.com/">
+        CAR Software Systems [.com]
       </a>
     </div>
     
@@ -55,6 +53,7 @@ function createTodo() {
         {{ todo.content }}
       </li>
     </ul>
+
     <div>
       🥳 App successfully hosted. Try creating a new todo.
       <br />
@@ -62,5 +61,6 @@ function createTodo() {
         Review next steps of this tutorial.
       </a>
     </div>
+  -->
   </main>
 </template>
