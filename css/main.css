@@ -297,14 +297,18 @@ button:focus {
   z-index: 9999999; }
 
 .loader {
+/*
   top: 50%;
   width: 50px;
   height: 50px;
   border-radius: 100%;
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto; 
+*/
+}
 
 #loader-1:before, #loader-1:after {
+  /*
   content: "";
   position: absolute;
   top: -10px;
@@ -313,14 +317,22 @@ button:focus {
   height: 100%;
   border-radius: 100%;
   border: 7px solid transparent;
-  border-top-color: #3c9cfd; }
+  border-top-color: #3c9cfd; 
+  */
+  }
 
 #loader-1:before {
+  /*
   z-index: 100;
-  animation: spin 2s infinite; }
+  animation: spin 2s infinite;
+  */
+  }
 
 #loader-1:after {
-  border: 7px solid #fafafa; }
+  /*
+  border: 7px solid #fafafa; 
+  */
+  }
 
 @keyframes spin {
   0% {
