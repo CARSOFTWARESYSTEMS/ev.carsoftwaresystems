@@ -369,8 +369,8 @@ button:focus {
   color: #fff; }
 
 .menu-bg {
-  background: #dc0ab9;
-  background: linear-gradient(95deg, #d50887 40%, #000000 100%) !important;
+  background: #5533ff;
+  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%) !important;
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   padding: 5px;
