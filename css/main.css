@@ -320,7 +320,7 @@ button:focus {
 
 #loader-1:before {
   z-index: 100;
- /* animation: spin 2s infinite; */
+  animation: spin 2s infinite;
   }
 
 #loader-1:after {
