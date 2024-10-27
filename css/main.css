@@ -94,7 +94,7 @@ a:not([href]):not([tabindex]):hover {
   Section Title
    ========================================================================== */
 .section {
-  padding: 130px 0px;
+  padding: 50px 0px;
 }
 
 .form-control:focus {
@@ -105,7 +105,7 @@ a:not([href]):not([tabindex]):hover {
 
 .section-header {
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   position: relative;
 }
