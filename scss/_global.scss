@@ -247,14 +247,12 @@ a:not([href]):not([tabindex]):hover {
   border-color: #3c96ff;
   border-style: solid;
   background: linear-gradient(to right, #3c96ff 0%, #2dfbff 100%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @include transition(.3s);
 }
 
 .btn-apple i {
   background: linear-gradient(to right, #3c96ff 0%, #2dfbff 100%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -262,7 +260,6 @@ a:not([href]):not([tabindex]):hover {
 .btn-apple:active,
 .btn-apple:focus {
   background: linear-gradient(to right, #3c96ff 0%, #2dfbff 100%) !important;
-  -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
 
