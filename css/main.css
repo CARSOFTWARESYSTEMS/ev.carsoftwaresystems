@@ -282,7 +282,6 @@ a:not([href]):not([tabindex]):hover {
   border-style: solid;
   background: -webkit-gradient(linear, left top, right top, from(#3c96ff), to(#2dfbff));
   background: linear-gradient(to right, #3c96ff 0%, #2dfbff 100%);
-
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1644,7 +1643,6 @@ button:focus {
   color: #3ecf8e;
   display: inline-block;
   zoom: 1;
-  display: inline;
   margin: 5px;
   font-size: 16px;
   border-radius: 50px;
@@ -1664,7 +1662,6 @@ button:focus {
   color: #3ecf8e;
   display: inline-block;
   zoom: 1;
-  display: inline;
   margin: 5px;
   font-size: 16px;
   border-radius: 50px;
