@@ -63,7 +63,7 @@
   // sticky menu 
   $(window).on('scroll', function (event) {
     var scroll = $(window).scrollTop();
-    if (scroll < 20) {
+    if (scroll < 2) {
       $(".navbar-area").removeClass("sticky menu-bg");
     } else {
       $(".navbar-area").addClass("sticky menu-bg");
