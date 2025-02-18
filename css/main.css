@@ -97,6 +97,10 @@ Domain Path:      /languages/
      padding: 130px 0px;
    }
    
+   .section2 {
+    padding: 0px 0px;
+  }
+
    .form-control:focus {
      outline: none;
      -webkit-box-shadow: none;
