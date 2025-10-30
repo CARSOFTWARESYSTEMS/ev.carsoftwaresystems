@@ -2,7 +2,7 @@
   
   { "id": 1, "title": "Electric Vehicles Basics ", "overview": "Electric vehicles (EVs) use electricity as their primary fuel or to improve the efficiency of conventional vehicle designs. EVs include all-electric",
             "year": "2025",
-            "poster_url": "http://carsoftwaresystems.com/img/blog/01.jpg",
-            "stream_url": "http://carsoftwaresystems.com/img/test/ElectricVehicleBasics.ElectricVehicleBasics.m4v"
+            "poster_url": "https://carsoftwaresystems.com/img/blog/01.jpg",
+            "stream_url": "https://carsoftwaresystems.com/img/test/ElectricVehicleBasics.ElectricVehicleBasics.m4v"
           }
 }
