@@ -1,8 +1,25 @@
 {
   
-  { "id": 1, "title": "Electric Vehicles Basics ", "overview": "Electric vehicles (EVs) use electricity as their primary fuel or to improve the efficiency of conventional vehicle designs. EVs include all-electric",
-            "year": "2025",
-            "poster_url": "https://carsoftwaresystems.com/img/blog/01.jpg",
-            "stream_url": "https://carsoftwaresystems.com/public/test/ElectricVehicleBasics.m4v"
-          }
+  { "id": 0, "title": "Electric Vehicles Basics ", "overview": "Electric vehicles (EVs) use electricity as their primary fuel or to improve the efficiency of conventional vehicle designs. EVs include all-electric",
+              "year": "2025",
+              "poster_url": "https://carsoftwaresystems.com/img/blog/01.jpg",
+              "stream_url": "https://carsoftwaresystems.com/public/test/ElectricVehicleBasics.m4v"
+  },
+
+  { "id": 1, "title": "The Swift Saga", "overview": "A journey into modern iOS.",
+    "year": "2024",
+    "poster_url": "https://picsum.photos/200/300?1",
+    "stream_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.m3u8"
+  },
+  { "id": 2, "title": "Concurrency Unleashed", "overview": "Async/await saves the day.",
+    "year": "2023",
+    "poster_url": "https://picsum.photos/200/300?2",
+    "stream_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.m3u8"
+  },
+  { "id": 3, "title": "MVVM: The Movie", "overview": "Separating concerns since forever.",
+    "year": "2022",
+    "poster_url": "https://picsum.photos/200/300?3",
+    "stream_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.m3u8"
+  }
+
 }
