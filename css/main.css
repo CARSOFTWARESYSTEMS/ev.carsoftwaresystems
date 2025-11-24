@@ -121,6 +121,20 @@ Domain Path:      /languages/
      position: relative;
      line-height: 30px;
    }
+   .section-header .section-title2 {
+     font-size: 20px;
+     margin-bottom: 12px;
+     font-weight: 600;
+     position: relative;
+     line-height: 30px;
+   }
+   .section-header .section-title3 {
+     font-size: 16px;
+     margin-bottom: 12px;
+     font-weight: 600;
+     position: relative;
+     line-height: 30px;
+   }
    
    .section-header .desc-text p {
      font-size: 18px;
