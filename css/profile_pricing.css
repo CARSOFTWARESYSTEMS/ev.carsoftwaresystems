@@ -1,0 +1,98 @@
+/* Profile Picture Styling with Animated Border */
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #000428, #004e92, #0066cc, #004e92, #000428);
+    background-size: 300% 300%;
+    animation: gradientShift 3s ease infinite;
+    box-shadow: 0 8px 20px rgba(0, 78, 146, 0.4);
+}
+
+.profile-pic-container img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: block;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Pricing Card Styles - Dark Blue Theme */
+.pricing-card {
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    border-color: #004e92;
+    box-shadow: 0 8px 20px rgba(0, 78, 146, 0.2);
+    transform: translateY(-5px);
+}
+
+.pricing-card.featured {
+    border-color: #004e92;
+    box-shadow: 0 8px 20px rgba(0, 78, 146, 0.3);
+}
+
+.pricing-amount {
+    color: #004e92 !important;
+    font-weight: 700;
+}
+
+.purchase-btn {
+    background: #000428;
+    background: linear-gradient(95deg, #000428 0%, #004e92 100%);
+    border: 2px solid #004e92;
+    color: #fff !important;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.purchase-btn:hover {
+    background: linear-gradient(95deg, #004e92 0%, #000428 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 78, 146, 0.4);
+}
+
+.purchase-btn-outline {
+    background: transparent;
+    border: 2px solid #000428;
+    color: #000428 !important;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.purchase-btn-outline:hover {
+    background: #000428;
+    background: linear-gradient(95deg, #000428 0%, #004e92 100%);
+    color: #fff !important;
+    border-color: #004e92;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 78, 146, 0.4);
+}
