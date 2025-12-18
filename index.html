@@ -329,7 +329,7 @@
         <!-- Start Fetatures -->
         <div class="feature-item">
           <div class="feature-icon">
-            <span class="feature-text-icon">PC</span>
+            <span class="feature-text-icon">PoC</span>
           </div>
           <div class="feature-info">
             <h4>Proof of Concept (POC)</h4>
@@ -485,9 +485,10 @@
       </div>
     </div>
 
-    <!-- Mobile Sticky FAB (Visible only when expanded) -->
+    <!-- Mobile Sticky FAB (Visible only when expanded and in view) -->
     <button id="mobile-collapse-fab" class="mobile-fab">
       <i class="lni lni-chevron-up"></i>
+      <span>Collapse View</span>
     </button>
   </section>
 
@@ -1775,11 +1776,7 @@
           toggleBtn.classList.remove('collapsed');
           btnText.textContent = 'Collapse View';
           btnIcon.textContent = '−';
-
-          // Show FAB only on mobile when expanded
-          if (window.innerWidth <= 768) {
-            fabBtn.classList.add('show');
-          }
+          checkFabVisibility();
         } else {
           wrapper.classList.remove('expanded');
           toggleBtn.classList.remove('expanded');
@@ -1790,8 +1787,29 @@
         }
       }
 
+      function checkFabVisibility() {
+        const isMobile = window.innerWidth <= 768;
+        const isExpanded = wrapper.classList.contains('expanded');
+
+        if (isMobile && isExpanded && isSectionInView) {
+          fabBtn.classList.add('show');
+        } else {
+          fabBtn.classList.remove('show');
+        }
+      }
+
+      let isSectionInView = false;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          isSectionInView = entry.isIntersecting;
+          checkFabVisibility();
+        });
+      }, { threshold: 0.1 });
+
+      observer.observe(document.getElementById('engagements'));
+
       function toggleGrid() {
-        isAutoCollapsing = false; // Stop auto-collapse if user interacts
+        isAutoCollapsing = false;
         const isExpanded = wrapper.classList.contains('expanded');
         updateUI(!isExpanded);
       }
@@ -1802,21 +1820,13 @@
       toggleBtn.addEventListener('click', toggleGrid);
 
       fabBtn.addEventListener('click', function () {
-        // Scroll to the section header before collapsing for better UX
         document.getElementById('engagements').scrollIntoView({ behavior: 'smooth' });
         setTimeout(() => {
           updateUI(false);
-        }, 300);
+        }, 500);
       });
 
-      // Handle window resize for FAB visibility
-      window.addEventListener('resize', function () {
-        if (wrapper.classList.contains('expanded') && window.innerWidth <= 768) {
-          fabBtn.classList.add('show');
-        } else {
-          fabBtn.classList.remove('show');
-        }
-      });
+      window.addEventListener('resize', checkFabVisibility);
     });
   </script>
 </body>
