@@ -307,7 +307,8 @@
   }
 
   .hero-area .contents .btn {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     margin-left: auto !important;
     margin-right: auto !important;
     display: block !important;
@@ -327,7 +328,7 @@
     max-width: 250px !important;
     height: auto !important;
     padding: 14px 15px !important;
-    margin: 10px auto !important;
+    margin: 5px auto !important;
     display: block !important;
   }
 
@@ -585,14 +586,22 @@
     display: none !important;
   }
 
-  .header-button .btn {
+  .header-button .btn,
+  .desc-text .btn,
+  .contact-text .btn {
     display: block !important;
     width: 220px !important;
     max-width: 100% !important;
-    margin: 10px auto !important;
+    margin: 5px auto !important;
     height: auto !important;
     line-height: normal !important;
     padding: 14px 15px !important;
+  }
+
+  .header-button br,
+  .desc-text br,
+  .contact-text br {
+    display: none !important;
   }
 }
 
