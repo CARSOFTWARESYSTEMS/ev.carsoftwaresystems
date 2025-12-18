@@ -375,22 +375,22 @@ a:not([href]):not([tabindex]):hover {
 .btn-border-filled6 {
   cursor: pointer;
   background-color: #fff;
-  border: 1px solid #ee2400;
-  color: #ee2400;
-  box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-  -moz-box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-  -webkit-box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-  -o-box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-  -ms-box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
+  border: 1px solid #7fc9fb;
+  color: #004e92;
+  box-shadow: 0px 8px 9px 0px rgba(0, 78, 146, 0.1);
+  -moz-box-shadow: 0px 8px 9px 0px rgba(0, 78, 146, 0.1);
+  -webkit-box-shadow: 0px 8px 9px 0px rgba(0, 78, 146, 0.1);
+  -o-box-shadow: 0px 8px 9px 0px rgba(0, 78, 146, 0.1);
+  -ms-box-shadow: 0px 8px 9px 0px rgba(0, 78, 146, 0.1);
   width: 180px;
   height: 50px;
   padding: 15px 15px;
 }
 
 .btn-border-filled6:hover {
-  color: #ee2400;
-  background-color: #fff;
-  border-color: #ee2400;
+  color: #fff;
+  background: linear-gradient(95deg, #000428 0%, #004e92 100%);
+  border-color: #004e92;
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
 }
