@@ -397,27 +397,28 @@ a:not([href]):not([tabindex]):hover {
 
 
 .btn-border-filled7 {
+  display: inline-block;
+  box-sizing: border-box;
   cursor: pointer;
-  background: #FC4C02;
-  background: linear-gradient(95deg, #98fc02 0%, #fcfc02 25%, #FC4C02 50%, #ee2400 100%);
+  background: #FC4C02; /* Fallback */
+  background-image: linear-gradient(95deg, #98fc02 0%, #fcfc02 25%, #FC4C02 50%, #ee2400 75%, #98fc02 100%);
+  background-size: 200% auto;
+  background-position: left center;
   border: 1px solid #FC4C02;
   color: #fff;
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-  -moz-box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-  -webkit-box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-  -o-box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-  -ms-box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
   width: 180px;
   height: 50px;
-  padding: 15px 15px;
+  padding: 15px;
+  transition: all 0.4s ease;
 }
 
 .btn-border-filled7:hover {
   color: #fff;
-  background: linear-gradient(95deg, #FC4C02 50%, #98fc02 0%, #fcfc02 25%, #ee2400 100%);
   border-color: #FC4C02;
-  -webkit-transform: translateY(-2px);
+  box-shadow: 0px 10px 15px 0px rgba(96, 94, 94, 0.25);
   transform: translateY(-2px);
+  background-position: right center;
 }
 
 
