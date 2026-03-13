@@ -415,7 +415,7 @@ a:not([href]):not([tabindex]):hover {
 .btn-border-filled7:hover {
   color: #FC4C02;
   background: linear-gradient(95deg, #FC4C02 0%, #000428 100%);
-  border-color: #ffffff;
+  border-color: #FC4C02;
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
 }
